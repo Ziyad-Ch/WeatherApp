@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Today's Weather</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input id="search-input" type="text" placeholder="Enter your city name" spellcheck="false">
+            <button id="search-btn"><img src="./icons/search.png" alt=""></button>
+        </div>
+        <div class="error"><p>City not found</p></div>
+        <div class="weather">
+            <img src="./icons/rain.png" class="weather-icon" alt="rain">
+            <h1 class="temp"></h1>
+            <h2 class="city" id="city"></h2>
+        
+            <div class="details">
+                <div class="col">
+                    <img src="./icons/humidity.png">
+                    <div>
+                        <p class="humidity">%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./icons/wind.png">
+                    <div>
+                        <p class="wind">Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
